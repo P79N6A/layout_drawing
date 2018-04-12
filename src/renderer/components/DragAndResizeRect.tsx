@@ -28,45 +28,56 @@ export default class DragAndResizeRect extends React.Component {
     console.log('group:', e);
     var layer = e.getLayer();
     console.log(layer);
-    let tempCircle = new Konva.Circle({
+    let topLeft = new Konva.Circle({
       x: 0,
       y: 0,
       stroke: '#666',
       fill: '#ddd',
       strokeWidth: 2,
       radius: 8,
+      name: "topLeft",
       draggable: true
     });
-    e.add(tempCircle);
-    tempCircle = new Konva.Circle({
+    e.add(topLeft);
+    let topRight = new Konva.Circle({
       x: 50,
       y: 0,
       stroke: '#666',
       fill: '#ddd',
       strokeWidth: 2,
       radius: 8,
+      name:"topRight",
       draggable: true
     });
-    e.add(tempCircle);
-    tempCircle = new Konva.Circle({
+    e.add(topRight);
+    let bottomLeft = new Konva.Circle({
       x: 0,
       y: 50,
       stroke: '#666',
       fill: '#ddd',
       strokeWidth: 2,
       radius: 8,
+      name:"bottomLeft",
       draggable: true
     });
-    e.add(tempCircle);tempCircle = new Konva.Circle({
+    e.add(bottomLeft);
+    let bottomRight = new Konva.Circle({
       x: 50,
       y: 50,
       stroke: '#666',
       fill: '#ddd',
       strokeWidth: 2,
       radius: 8,
+      name: "bottomRight",
       draggable: true
     });
-    e.add(tempCircle);
+    e.add(bottomRight);
+
+    topLeft.on("dragmove", ()=>{
+      console.log("moveing, new x:",e.get(".topLeft")[0].getX()," new y:",e.get(".topLeft")[0].getY());
+      let newX = e.get(".topLeft")[0].getX();
+      let newY = e.get(".topLeft")[0].getY();
+    });
 
   }
 
