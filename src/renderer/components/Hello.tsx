@@ -1,5 +1,7 @@
 import * as React from 'react';
-
+import { Stage, Layer, Text } from 'react-konva';
+// import * as Konva from 'konva';
+import DragAndResizeRect from './DragAndResizeRect'
 export default class Hello extends React.Component<any, any> {
   /**
    * constructor
@@ -14,15 +16,19 @@ export default class Hello extends React.Component<any, any> {
   public render() {
     return (
       <div>
-        <h1>Hello. I'm counting: {this.state.counter}</h1>
-        <input type="button" onClick={this.onIncrement} value="increment" />
+        <Stage width={window.innerWidth} height={window.innerHeight}>
+        <Layer>
+          <Text text=" " />
+          <DragAndResizeRect />
+        </Layer>
+      </Stage>
       </div>
     );
   }
 
-  private onIncrement = () => {
-    this.setState((prevState: any, props: any) => {
-      return { counter: prevState.counter + 1 };
-    });
-  };
+  // private onIncrement = () => {
+  //   this.setState((prevState: any, props: any) => {
+  //     return { counter: prevState.counter + 1 };
+  //   });
+  // };
 }

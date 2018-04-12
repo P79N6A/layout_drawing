@@ -41,8 +41,10 @@
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
+    "konva": "^2.0.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-konva": "^1.7.1"
   },
   "build": {
     "productName": "electron-demo",
