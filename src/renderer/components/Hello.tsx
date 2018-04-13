@@ -19,7 +19,7 @@ export default class Hello extends React.Component<any, any> {
         <Stage width={window.innerWidth} height={window.innerHeight}>
         <Layer>
           <Text text=" " />
-          <DragAndResizeRect />
+          <DragAndResizeRect x={100} y={50} width={50} height={100}/>
         </Layer>
       </Stage>
       </div>

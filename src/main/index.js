@@ -6,7 +6,7 @@ let mainWindow = null;
 const dev = process.env.NODE_ENV === 'development';
 
 const installExtensions = () => {
-  if (dev) {
+  if (!dev) {
     const installer = require('electron-devtools-installer'); // eslint-disable-line global-require
 
     const extensions = [
@@ -33,6 +33,8 @@ function createWindow() {
     protocol: "file:",
     slashes: true,
   });
+  console.log(html);
+  
   mainWindow.loadURL(html);
   
   mainWindow.webContents.on('did-finish-load', () => {
