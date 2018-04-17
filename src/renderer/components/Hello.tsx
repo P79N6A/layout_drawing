@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Stage, Layer, Text } from 'react-konva';
 // import * as Konva from 'konva';
-import DragAndResizeRect from './DragAndResizeRect'
+// import DragAndResizeRect from './DragAndResizeRect';
+import DragAndResizeCircle from './DragAndResizeCircle';
 export default class Hello extends React.Component<any, any> {
   /**
    * constructor
@@ -19,7 +20,8 @@ export default class Hello extends React.Component<any, any> {
         <Stage width={window.innerWidth} height={window.innerHeight}>
         <Layer>
           <Text text=" " />
-          <DragAndResizeRect x={100} y={50} width={50} height={100}/>
+          {/* <DragAndResizeRect x={100} y={50} width={50} height={100}/> */}
+          <DragAndResizeCircle x={100} y={50} radius={20}/>
         </Layer>
       </Stage>
       </div>
