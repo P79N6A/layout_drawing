@@ -2759,7 +2759,7 @@ klaw@^1.0.0:
 
 konva@^2.0.2:
   version "2.0.2"
-  resolved "http://r.cnpmjs.org/konva/download/konva-2.0.2.tgz#e9b22f18c5fe3fb0012cd6ef234bf602818a60e1"
+  resolved "https://r.cnpmjs.org/konva/download/konva-2.0.2.tgz#e9b22f18c5fe3fb0012cd6ef234bf602818a60e1"
 
 latest-version@^3.0.0:
   version "3.1.0"
@@ -2838,13 +2838,9 @@ lodash-es@^4.17.5, lodash-es@^4.2.1:
   version "4.17.8"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.8.tgz#6fa8c8c5d337481df0bdf1c0d899d42473121e45"
 
-lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.6.1:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
-
-lodash@^4.17.5, lodash@^4.2.1:
-  version "4.17.5"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
+lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@^4.6.1:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
 
 loglevel@^1.4.1:
   version "1.6.1"
@@ -3766,7 +3762,7 @@ react-hot-loader@^3.1.3:
 
 react-konva@^1.7.1:
   version "1.7.1"
-  resolved "http://r.cnpmjs.org/react-konva/download/react-konva-1.7.1.tgz#5acbb721148a4628ccea83d984ecfe864a251461"
+  resolved "https://r.cnpmjs.org/react-konva/download/react-konva-1.7.1.tgz#5acbb721148a4628ccea83d984ecfe864a251461"
   dependencies:
     fbjs "^0.8.16"
     react-reconciler "^0.7.0"
@@ -3787,7 +3783,7 @@ react-proxy@^3.0.0-alpha.0:
 
 react-reconciler@^0.7.0:
   version "0.7.0"
-  resolved "http://r.cnpmjs.org/react-reconciler/download/react-reconciler-0.7.0.tgz#9614894103e5f138deeeb5eabaf3ee80eb1d026d"
+  resolved "https://r.cnpmjs.org/react-reconciler/download/react-reconciler-0.7.0.tgz#9614894103e5f138deeeb5eabaf3ee80eb1d026d"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
